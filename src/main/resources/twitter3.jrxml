@@ -46,9 +46,9 @@
 				<imageExpression><![CDATA[$P{profileimage}]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement style="Title" x="216" y="10" width="339" height="93"/>
+				<reportElement style="Title" x="203" y="20" width="339" height="93"/>
 				<textElement>
-					<font size="80" isBold="false"/>
+					<font fontName="SansSerif" size="80" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Tweets]]></text>
 			</staticText>
@@ -75,7 +75,9 @@
 			</textField>
 			<textField pattern="" isBlankWhenNull="false">
 				<reportElement style="Detail" positionType="Float" stretchType="RelativeToBandHeight" x="190" y="10" width="363" height="62" isPrintWhenDetailOverflows="true"/>
-				<textElement markup="none"/>
+				<textElement markup="none">
+					<font fontName="SansSerif"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{tweet}]]></textFieldExpression>
 			</textField>
 		</band>
